@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="description" content="Peculiar Ediomo-Abasi's Assignment 2 for the Tinyuka Semester at AltSchool Africa">
+        <link rel="stylesheet" href="/Assignment 2/CSS/style.css">
+        <title> Create Account | For Individuals</title>
+    </head>
+
+    <body>
+        <main>
+            <section class="info">
+                <img src="./Images/logo.svg" alt="login">
+                <h1>For Individuals</h1>
+                <p class="info-desc hideonmobile">Start benefiting from the wellness experience. For companies looking on increasing
+                    productivity, and improving organization wellness.</p>
+                <p class="info-desc hideondesktop">Inspiring wholesome harmony for the mind, body and spirit, for everyone,
+                    everywhere.</p>
+            </section>
+
+            <form action="#" method="post" class="registration-form">
+                <div class="form-group">
+                    <div class="input">
+                        <label for="firstName">First Name</label>
+                        <input type="text" placeholder="Enter first name" id="firstName" value="Tolu" required aria-required="true" />
+                    </div>
+                    <div class="input">
+                        <label for="lastName">Last Name</label>
+                        <input type="text" id="lastName" required aria-required="true" />
+                    </div>
+                    <div class="input">
+                        <label for="gender">Gender</label>
+                        <select id="gender" required aria-required="true">
+                            <option value="">Select here</option>
+                            <option value="male">Male</option>
+                            <option value="female">Female</option>
+                            <option value="other">Other</option>
+                        </select>
+                    </div>
+                    <div class="input">
+                        <label for="dob">Date of Birth</label>
+                        <input type="date" placeholder="Select here" id="dob" required aria-required="true" />
+                    </div>
+                    <div class="input">
+                        <label for="weight">Weight(KG)</label>
+                        <input type="text" placeholder="Enter Weight" id="weight" required aria-required="true" />
+                    </div>
+                    <div class="input">
+                        <label for="height">Height(CM)</label>
+                        <input type="text" placeholder="Enter height here.." id="height" required aria-required="true" />
+                    </div>
+
+                    <div class="input activity">
+                        <label for="activity level">Activity Level</label>
+                        <select id="activity level" required aria-required="true">
+                            <option value="" selected>Select here</option>
+                            <option value="inactive">Inactive: Idle all day</option>
+                            <option value="light">Light: 10 - 15 minutes of walking</option>
+                            <option value="mooderate">Moderate: 20 - 45 minutes of walking</option>
+                            <option value="active">Very Active: Visits gym at least 4 times daily</option>
+
+                        </select>
+                    </div>
+
+                    <div class="input password">
+                        <label for="password">Password</label>
+                        <input type="password" placeholder="********" id="password" required aria-required="true" />
+                        <svg class="eye" xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16" fill="none">
+                            <path d="M7.99998 6.00001C6.90531 6.00001 5.99998 6.90601 5.99998 8.00001C5.99998 9.09468 6.90531 10 7.99998 10C9.09398 10 9.99998 9.09468 9.99998 8.00001C9.99998 6.90601 9.09398 6.00001 7.99998 6.00001Z" fill="#A6A6A6"/>
+                            <path d="M7.99998 3.33334C2.93864 3.33334 1.41752 7.74468 1.4036 7.78934L1.33331 8.00001L1.40294 8.21068C1.41753 8.25534 2.93864 12.6667 7.99998 12.6667C13.0613 12.6667 14.5824 8.25534 14.5964 8.21068L14.6666 8.00001L14.597 7.78934C14.5824 7.74468 13.0613 3.33334 7.99998 3.33334ZM7.99998 11.3333C4.45181 11.3333 3.07723 8.76934 2.74436 8.00001C3.07856 7.22801 4.4538 4.66668 7.99998 4.66668C11.5482 4.66668 12.9227 7.23068 13.2556 8.00001C12.9214 8.77201 11.5462 11.3333 7.99998 11.3333Z" fill="#A6A6A6"/>
+                        </svg>
+                    </div>
+                    <button form="registration_form" type="submit" class="submit-btn">Register</button>
+
+                </div>
+
+                <h6 class="terms">
+                    By clicking Register, you agree to our
+                    <a href="/">Terms of Use</a>
+                    and our
+                    <a href="/">Privacy Policy.</a>
+                </h6>
+            </form>
+        </main>
+
+    </body>
+
+</html>

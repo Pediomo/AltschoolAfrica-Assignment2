@@ -1,0 +1,201 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700;800;900&display=swap');
+
+:root {
+    --green: #2EC4B6;
+    --black: #000B0A;
+    --grey: #737373;
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins';
+    line-height: 1.5rem;
+}
+
+
+
+body {
+    min-height: 100vh;
+    width: 100vw;
+    font-weight: 400;
+    line-height: 1.5;
+    display: grid;
+    align-items: center;
+    justify-content: center;
+    background: rgba(46, 196, 182, 0.05);
+
+}
+
+h1 {
+    margin-top: 2.2rem;
+    font-size: 2.5rem;
+    font-weight: 700;
+    line-height: 3.125rem;
+    color: #000B0A;
+    letter-spacing: -0.05rem;
+
+    @media (max-width: 991px) {
+        font-size: 1.8rem;
+
+    }
+
+}
+
+p {
+    color: var(--grey);
+    font-weight: 300;
+    font-size: 0.89rem;
+}
+
+.hideonmobile {
+    @media (max-width: 991px) {
+        display: none;
+    }
+}
+
+.hideondesktop {
+    @media (min-width: 992px) {
+        display: none;
+    }
+}
+
+.registration-form {
+    min-width: 20.4375rem;
+    padding: 2.5rem;
+    border-radius: 6px;
+    background: #FFF;
+    box-shadow: 0px 4px 50px 0px rgba(4, 8, 19, 0.10);
+
+    @media (min-width: 768px) {
+        width: 40rem;
+    }
+}
+
+.form-group {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    column-gap: 1.5rem;
+    row-gap: 1.875rem;
+    @media (max-width: 1023px) {
+        grid-template-columns: repeat(1, minmax(0, 1fr));
+    }
+}
+
+.input {
+    display: grid;
+    gap: 0.625rem;
+    align-content: flex-start;
+    position: relative;
+}
+
+input,
+select {
+    padding: 0.88rem 1rem;
+    border: solid 1.5px rgb(216, 219, 223);
+    border-radius: 0.125rem;
+    background-color: white;
+    color: rgb(11, 30, 75);
+    width: 100%;
+
+    &:hover,
+    &:focus,
+    &:active {
+        border: 1.5px solid var(--green);
+        outline: none;
+    }
+}
+
+label {
+    display: flex;
+    align-items: center;
+    font-weight: 600;
+    font-size: 0.875rem;
+    color: #011C34;
+    letter-spacing: 0.00625rem;
+}
+
+label span {
+    color: red;
+    margin-left: 0.125rem;
+}
+
+.eye {
+    position: absolute;
+    right: 1rem;
+    top: 3.3rem;
+}
+
+.activity, .password, .submit-btn {
+    grid-column: span 2 / span 2;
+
+    @media (max-width: 1023px) {
+        grid-column: span 1 / span 1;
+    }
+}
+
+.submit-btn {
+    background: var(--green);
+    padding-top: 1rem ;
+    padding-bottom: 1rem;
+    border: 0;
+    border-radius: 0.1rem;
+    color: white;
+    font-size: 1rem;
+    letter-spacing: 0.0125rem;
+    font-weight: 600;
+}
+
+.terms {
+    text-align: center;
+    margin-top: 1rem;
+    font-size: 0.875rem;
+    line-height: 1.5625rem;
+    font-weight: 400;
+    color: #000;
+}
+
+.terms a {
+    color: var(--green)
+}
+
+.info {
+    flex-basis: 50%;
+
+    img {
+        @media (max-width: 991px) {
+            max-width: 60px;
+        }
+    }
+
+    @media (max-width: 991px) {
+        padding-inline: 0.5rem;
+    }
+}
+
+.info-desc {
+    margin-top: 1.25rem;
+}
+
+main {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    align-items: center;
+    /* max-width: 1156px;
+    width: 90vw; */
+    padding: 0 8.75rem;
+    gap: 5rem;
+
+    @media (max-width: 991px) {
+        display: flex;
+        flex-direction: column;
+        max-width: 550px;
+        /* padding-block: 3rem; */
+        gap: 2.5rem;
+    }
+
+
+    
+
+}
